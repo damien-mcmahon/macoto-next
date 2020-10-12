@@ -1,8 +1,10 @@
 import Container from '../Container';
 import Headshot from '../Headshot'
 import Rotate from 'react-rotating-text'
+import Socials from '../Socials';
 
 import styles from './hero.module.scss'
+
 
 const lines = [
   "I'm a Frontend Developer",
@@ -16,8 +18,9 @@ const Hero = () => (
       <Headshot />
       <div className={styles.textWrapper}>
         <h1 className={styles.welcome}>Hi! I'm Damien</h1>
-        <Rotate items={lines} className={styles.introText} />
+        <h2 className={styles.introText}>I'm a Frontend Developer with over 12 years experience working with companies of all sizes.</h2>
       </div>
+      <Socials />
     </Container>
   </div>
 )

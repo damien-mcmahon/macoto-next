@@ -17,9 +17,17 @@
 .welcome {
   font-size: 48px;
   margin: 0;
+  margin-top: 20px;
 }
 
 .introText {
-  margin-top: 30px;
+  max-width: 80%;
+}
+
+.rotatingText {
   font-size: 30px;
+  margin-top: 0;
+  font-family: 'JB-Bold';
+  border: 1px solid;
+  display: block;
 }

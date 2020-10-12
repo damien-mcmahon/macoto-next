@@ -1,0 +1,17 @@
+.socialWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.socialItemWrapper {
+  border: 1px solid orange;
+  cursor: pointer;
+}
+
+.socialItem {
+  height: 32px;
+  width: 32px;
+  fill: #cb4042;
+  display: block;
+  margin-top: 8px;
+}
