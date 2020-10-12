@@ -1,0 +1,44 @@
+$white: #fff;
+$end-bg: #cb4042;
+$start-bg: mix($white, $end-bg, 30%);
+
+$picture-size: 500px;
+$headshot-width: 100%;
+$graphic-size: 100%;
+
+.picture {
+  padding: 0;
+  height: 100%;
+  width: $headshot-width;
+  background: url('/images/damien.png') 50% 50% no-repeat;
+  position: relative;
+  z-index: 2;
+  margin: 0 auto;
+}
+
+.pictureBg {
+  border-radius: 50px;
+  background: $end-bg;
+  background: radial-gradient(circle at var(--x) var(--y), $start-bg, $end-bg);
+  height: $graphic-size;
+  width: $graphic-size;
+  position: absolute;
+  z-index: 1;
+  top: 100px;
+}
+
+.pictureWrapper {
+  width: $picture-size;
+  height: $picture-size;
+  border-radius: 50px;
+  overflow: hidden;
+  position: relative;
+  margin: 50px 0;
+  transform: perspective(800px) rotateY(var(--picX)) rotateX(var(--picY));
+  transition: transform 0.2s ease-out;
+
+  &:hover {
+    transform: perspective(800px) rotateY(var(--picX)) rotateX(var(--picY))
+      scale(0.95);
+  }
+}

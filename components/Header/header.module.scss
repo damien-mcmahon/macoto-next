@@ -1,0 +1,15 @@
+$padding-val: 8px;
+
+.header {
+  display: flex;
+  padding: $padding-val;
+}
+.headerContainer {
+  display: flex;
+}
+
+.nav {
+  flex: 1;
+  display: inline-flex;
+  justify-content: flex-end;
+}

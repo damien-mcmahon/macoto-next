@@ -1,0 +1,25 @@
+.heroWrapper {
+  display: flex;
+  min-height: 85vh;
+  margin-top: 50px;
+}
+
+.textWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: Lato;
+  margin: 0;
+  margin-left: 50px;
+  flex: 1;
+}
+
+.welcome {
+  font-size: 48px;
+  margin: 0;
+}
+
+.introText {
+  margin-top: 30px;
+  font-size: 30px;
+}
