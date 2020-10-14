@@ -22,6 +22,10 @@
 .servicesWrapper {
   display: flex;
   align-items: center;
+
+  @media screen and(max-width: 600px) {
+    flex-direction: column;
+  }
 }
 
 .servicesCardWrapper {
@@ -35,6 +39,10 @@
 
   &:hover {
     transform: scale(1.05);
+  }
+
+  @media screen and(max-width: 600px) {
+    margin: 30px auto;
   }
 }
 
@@ -83,5 +91,9 @@
   font-size: 56px;
   &:hover {
     text-decoration: underline;
+  }
+
+  @media screen and(max-width: 600px) {
+    font-size: 24px;
   }
 }

@@ -18,6 +18,10 @@
   font-family: Lato, sans-serif;
   color: #333;
   line-height: 1.8;
+
+  @media screen and(max-width: 600px) {
+    flex-direction: column-reverse;
+  }
 }
 
 .aboutTextWrapper {
@@ -25,6 +29,10 @@
   margin: 0;
   font-size: 16px;
   margin-right: 50px;
+
+  @media screen and(max-width: 600px) {
+    width: 100%;
+  }
 }
 
 .redText {
