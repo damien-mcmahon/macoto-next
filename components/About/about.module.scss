@@ -1,0 +1,32 @@
+@import '../../styles/animations';
+
+.aboutImage {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 20px;
+  padding: 10px;
+}
+
+.aboutImage > img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+.aboutWrapper {
+  padding: 10px 0;
+  display: flex;
+  font-family: Lato, sans-serif;
+  color: #333;
+  line-height: 1.8;
+}
+
+.aboutTextWrapper {
+  flex: 1.25;
+  margin: 0;
+  font-size: 16px;
+  margin-right: 50px;
+}
+
+.redText {
+  animation: fadeInUp 1s forwards ease-out;
+}

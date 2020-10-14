@@ -17,10 +17,13 @@ const Hero = () => (
     <Container className={styles.heroWrapper}>
       <Headshot />
       <div className={styles.textWrapper}>
-        <h1 className={styles.welcome}>Hi! I'm Damien</h1>
+        <h1 className={styles.welcome}>Hi! I'm D</h1>
         <h2 className={styles.introText}>I'm a Frontend Developer with over 12 years experience working with companies of all sizes.</h2>
       </div>
-      <Socials />
+      <div className={styles.socialWrapper}>
+        <Socials />
+      </div>
+
     </Container>
   </div>
 )

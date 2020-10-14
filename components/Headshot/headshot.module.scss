@@ -14,6 +14,12 @@ $graphic-size: 100%;
   position: relative;
   z-index: 2;
   margin: 0 auto;
+
+  @media screen and(max-width: 600px) {
+    background-size: cover;
+    width: 90vw;
+    max-height: 50vh;
+  }
 }
 
 .pictureBg {
@@ -25,6 +31,13 @@ $graphic-size: 100%;
   position: absolute;
   z-index: 1;
   top: 100px;
+
+  @media screen and(max-width: 600px) {
+    left: 50%;
+    top: 50px;
+    transform: translateX(-50%);
+    width: 90vw;
+  }
 }
 
 .pictureWrapper {
@@ -40,5 +53,11 @@ $graphic-size: 100%;
   &:hover {
     transform: perspective(800px) rotateY(var(--picX)) rotateX(var(--picY))
       scale(0.95);
+  }
+
+  @media screen and(max-width: 600px) {
+    height: 50vh;
+    width: 90vw;
+    margin: 0 auto;
   }
 }

@@ -28,11 +28,20 @@ a {
 :root {
   --x: calc(500px / 2);
   --y: calc(500px / 2);
+  --cardX: 0deg;
+  --cardY: 0deg;
 }
 
 .react-rotating-text-cursor {
   animation: blinking-cursor 0.8s cubic-bezier(0.68, 0.01, 0.01, 0.99) 0s
     infinite;
+}
+
+h1,
+h2,
+h3,
+p {
+  color: #333;
 }
 
 @keyframes blinking-cursor {
@@ -44,5 +53,25 @@ a {
   }
   100% {
     opacity: 0;
+  }
+}
+
+.sectionWrapper {
+  padding: 50px 0;
+}
+
+.sectionTitle {
+  font-family: JB-Bold;
+  font-size: 32px;
+}
+
+@media screen and(max-width: 600px) {
+  .sectionWrapper {
+    padding: 40px 0;
+  }
+
+  .sectionTitle {
+    font-size: 16px;
+    margin: 10px;
   }
 }

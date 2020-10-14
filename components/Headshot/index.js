@@ -2,7 +2,6 @@ import { createRef } from 'react';
 import styles from './headshot.module.scss'
 
 const Headshot = () => {
-  const bgRef = createRef();
   const wrapperRef = createRef();
 
   const setPosition = (e) => {
@@ -16,14 +15,11 @@ const Headshot = () => {
     const clampedX = x - midX;
     const clampedY = midY - y;
 
-    bgRef.current.style.setProperty('--x', `${x}px`);
     wrapperRef.current.style.setProperty('--picX', `${Math.floor(clampedX / stepsX)}deg`);
     wrapperRef.current.style.setProperty('--picY', `${Math.floor(clampedY / stepsY)}deg`);
-    bgRef.current.style.setProperty('--y', `${y}px`);
   }
 
   const resetPostitions = (e) => {
-
     wrapperRef.current.style.setProperty('--picX', '0deg');
     wrapperRef.current.style.setProperty('--picY', '0deg');
   }
@@ -31,7 +27,7 @@ const Headshot = () => {
   return (
     <div className={styles.pictureWrapper}
       onMouseMove={setPosition} ref={wrapperRef} onMouseOut={resetPostitions}>
-      <div className={styles.pictureBg} ref={bgRef} />
+      <div className={styles.pictureBg} />
       <div className={styles.picture} />
     </div>
   )

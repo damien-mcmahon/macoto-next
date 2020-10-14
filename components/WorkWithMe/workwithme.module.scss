@@ -1,0 +1,87 @@
+.wrapper {
+  background: #cb4042;
+  font-family: JB-Bold, sans-serif;
+  color: #fff;
+  min-height: 50vh;
+}
+
+.title {
+  color: #fff;
+  opacity: 0.9;
+}
+
+.tick {
+  height: 32px;
+  width: 32px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 10px;
+  fill: #fff;
+}
+
+.servicesWrapper {
+  display: flex;
+  align-items: center;
+}
+
+.servicesCardWrapper {
+  flex: 1;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  transition: transform 0.2s ease-out;
+
+  &:hover {
+    transform: scale(1.05);
+  }
+}
+
+.servicesList {
+  flex: 1;
+}
+
+.logoWrapper {
+  flex: 0.25;
+  padding: 0 5px;
+}
+
+.servicesList {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.service {
+  flex: 1;
+  margin: 10px 0;
+  text-transform: uppercase;
+  display: inline-block;
+}
+
+.serviceInfo {
+  flex: 2;
+  font-weight: light;
+  display: inline;
+  font-size: 12px;
+}
+
+.contactWrapper {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+}
+
+.contactTitle {
+  font-size: 48px;
+  color: #fff;
+  opacity: 0.75;
+}
+
+.contactLink {
+  font-size: 56px;
+  &:hover {
+    text-decoration: underline;
+  }
+}

@@ -1,14 +1,42 @@
 .wrapper {
   background: #d7b98e;
-  padding: 30px 0;
-  margin-bottom: 50px;
 }
 
-.svg {
-  width: 25%;
-  margin: 0 2.5%;
+.wrapperHeader {
+  opacity: 0.5;
+  color: #fff;
 }
 
 .iconWrapper {
   display: flex;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  @media screen and(max-width: 600px) {
+    grid-template-columns: repeat(1, 1fr);
+    border: 2px dotted green;
+  }
+
+  .companyWrapper {
+    flex: 2;
+  }
+
+  .workedWith {
+    color: #fff;
+  }
+
+  .companyLink {
+    display: flex;
+    padding: 20px;
+  }
+
+  .svg {
+    width: 100%;
+    opacity: 0.75;
+    transition: opacity 0.25s 0.1s;
+
+    &:hover {
+      opacity: 1;
+    }
+  }
 }
