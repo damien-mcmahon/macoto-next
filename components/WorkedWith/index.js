@@ -10,25 +10,31 @@ import styles from './workedwith.module.scss'
 
 const companies = [{
   href: 'https://fundingcircle.com',
-  svg: FCSVG
+  svg: FCSVG,
+  name: 'Funding Circle'
 }, {
   href: 'https://cmcmarkets.com',
-  svg: CMCSVG
+  svg: CMCSVG,
+  name: 'CMC Markets'
 }, {
   href: 'https://metrobankonline.co.uk',
-  svg: MetroSVG
+  svg: MetroSVG,
+  name: 'Metro Bank UK'
 }, {
   href: 'https://zonedigital.com',
-  svg: ZoneSVG
+  svg: ZoneSVG,
+  name: 'Zone Digital'
 }, {
   href: 'https://discover.com',
-  svg: DiscoSVG
+  svg: DiscoSVG,
+  name: 'Discover Financial Services'
 }]
 
-const CompanyWrapper = ({ href, svg: CompanySVG }) => (
+const CompanyWrapper = ({ href, svg: CompanySVG, name }) => (
   <div className={styles.companyWrapper}>
-    <a href={href} className={styles.companyLink} target="_blank" rel="noopner">
+    <a href={href} className={styles.companyLink} target="_blank" rel="noopener">
       <CompanySVG className={styles.svg} />
+      <span className={styles.companyName}>{name}</span>
     </a>
   </div>
 )

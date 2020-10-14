@@ -3,7 +3,6 @@
 }
 
 .wrapperHeader {
-  opacity: 0.5;
   color: #fff;
 }
 
@@ -22,6 +21,12 @@
 
   .workedWith {
     color: #fff;
+  }
+
+  .companyName {
+    height: 0;
+    width: 0;
+    font-size: 0;
   }
 
   .companyLink {

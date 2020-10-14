@@ -32,7 +32,7 @@ const About = () => {
 
             <p>I enjoy leading and mentoring other developers, I aim to give clear constraints and follow some basic principles to help reduce complexity in what is a fast paced and often very complex environment to work in. Simple things such as writing readable code, reducing complexity in problem solving, looking for established solutions and aiming for convention over configuration can help achieve this. I continue to look for best practices and ways in which these constraints can be scaled across teams of various sizes.</p>
           </div>
-          <AboutImage src="/images/selfie.jpg" />
+          <AboutImage src="/images/selfie.jpg" alt="Picture of Damien by the River Teifi" />
         </div>
       </Container>
     </div>
