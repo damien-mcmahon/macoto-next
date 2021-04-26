@@ -66,6 +66,10 @@
   margin: 10px 0;
   text-transform: uppercase;
   display: inline-block;
+
+  @media screen and(max-width: 600px) {
+    margin: 5px 0px;
+  }
 }
 
 .serviceInfo {
@@ -73,6 +77,10 @@
   font-weight: light;
   display: inline;
   font-size: 12px;
+
+  @media screen and(max-width: 600px) {
+    margin-bottom: 10px;
+  }
 }
 
 .contactWrapper {
